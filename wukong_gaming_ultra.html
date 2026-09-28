@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Wukong Gaming | الجيزة</title>
+<meta name="description" content="Wukong Gaming - Gaming & Internet Cafe في الجيزة">
+<style>
+:root{--bg:#07080d;--panel:#10131d;--panel2:#171b28;--txt:#f7f8ff;--muted:#aeb5c7;--purple:#7c5cff;--cyan:#00d9ff;--line:#ffffff12}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 0,#4329a533,transparent 30%),radial-gradient(circle at 0 30%,#00b7d91a,transparent 25%),var(--bg);color:var(--txt);font-family:Tahoma,Arial,sans-serif;line-height:1.7}a{text-decoration:none;color:inherit}.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:#07080dcc;backdrop-filter:blur(15px);border-bottom:1px solid var(--line)}
+nav{height:70px;display:flex;align-items:center;justify-content:space-between}.brand{font-size:22px;font-weight:900}.brand i{font-style:normal;color:var(--cyan)}.links{display:flex;gap:22px;color:var(--muted);font-size:14px}.links a:hover{color:#fff}
+.hero{min-height:690px;display:flex;align-items:center;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,var(--bg)),linear-gradient(90deg,#07080d 0%,transparent 60%);pointer-events:none}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(120deg,#07080d 10%,transparent 70%),url("https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1800&q=85") center/cover;opacity:.32}
+.hero-content{position:relative;max-width:700px;padding:80px 0}.pill{display:inline-block;padding:6px 13px;border:1px solid #7c5cff66;background:#7c5cff12;color:#d9d1ff;border-radius:99px;font-size:13px;margin-bottom:18px}
+h1{font-size:clamp(45px,8vw,82px);line-height:1.02;margin:0 0 20px}h1 span{background:linear-gradient(90deg,var(--purple),var(--cyan));-webkit-background-clip:text;color:transparent}.lead{font-size:18px;color:var(--muted);max-width:620px}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.btn{padding:13px 20px;border-radius:13px;font-weight:800;border:1px solid var(--line);display:inline-flex;align-items:center;gap:8px}.primary{background:linear-gradient(135deg,var(--purple),#a26cff);box-shadow:0 12px 35px #7c5cff2e}.ghost{background:#ffffff08}.btn:hover{transform:translateY(-2px)}
+section{padding:72px 0}.title{text-align:center;margin-bottom:34px}.title h2{font-size:34px;margin:0}.title p{color:var(--muted);margin:5px 0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:linear-gradient(145deg,var(--panel),var(--panel2));border:1px solid var(--line);border-radius:22px;padding:24px;box-shadow:0 20px 50px #0003}.icon{font-size:32px}.card h3{margin:8px 0;font-size:20px}.muted{color:var(--muted)}
+.price{font-size:25px;font-weight:900;color:var(--cyan);margin-top:15px}.price small{font-size:12px;color:var(--muted);font-weight:400}
+.menu{max-width:760px;margin:auto}.item{display:flex;justify-content:space-between;padding:15px 0;border-bottom:1px solid var(--line)}.item:last-child{border:0}.item span{color:var(--cyan);font-weight:800}
+.info{display:grid;grid-template-columns:1fr 1fr;gap:18px}.info .card{min-height:190px}
+.socials{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.social{padding:10px 14px;background:#ffffff08;border:1px solid var(--line);border-radius:11px;color:#fff}.social.mutedlink{color:#858da0;cursor:default}
+.note{font-size:12px;color:#858da0;margin-top:12px}
+footer{padding:30px 0;border-top:1px solid var(--line);color:var(--muted);text-align:center}.top{position:fixed;bottom:18px;left:18px;width:44px;height:44px;display:grid;place-items:center;border-radius:50%;background:var(--purple);font-weight:900}
+@media(max-width:760px){.links{display:none}.grid,.info{grid-template-columns:1fr}.hero{min-height:650px}.hero-content{padding:70px 0}section{padding:55px 0}.lead{font-size:16px}}
+</style>
+
+<style>
+/* Premium visual upgrade */
+body{overflow-x:hidden}
+.hero{min-height:760px}
+.hero-bg{transform:scale(1.03);filter:saturate(1.15) contrast(1.05)}
+.hero-content{max-width:760px}
+.hero-content:after{content:"";display:block;width:90px;height:4px;margin-top:28px;border-radius:99px;background:linear-gradient(90deg,var(--purple),var(--cyan));box-shadow:0 0 24px #00d9ff66}
+.statbar{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:34px;max-width:650px}
+.stat{padding:15px 18px;border:1px solid var(--line);border-radius:16px;background:#ffffff07;backdrop-filter:blur(10px)}
+.stat b{display:block;font-size:21px}.stat span{font-size:12px;color:var(--muted)}
+.glow-card{position:relative;overflow:hidden}
+.glow-card:before{content:"";position:absolute;width:180px;height:180px;border-radius:50%;background:#7c5cff22;filter:blur(50px);top:-80px;left:-60px}
+.feature-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:18px}
+.feature{min-height:330px;padding:30px;border-radius:24px;border:1px solid var(--line);background:linear-gradient(145deg,#151a29,#0d1019);position:relative;overflow:hidden}
+.feature h3{font-size:27px;margin:0 0 8px}.feature p{color:var(--muted);max-width:540px}
+.feature .mini{position:absolute;left:25px;bottom:25px;padding:9px 13px;border-radius:10px;background:#ffffff08;border:1px solid var(--line);font-size:12px;color:#cfd5e4}
+.gallery{display:grid;grid-template-columns:1.4fr .8fr .8fr;grid-auto-rows:180px;gap:12px}
+.gallery div{border-radius:18px;overflow:hidden;border:1px solid var(--line);background-size:cover;background-position:center;position:relative}
+.gallery div:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent,#0008)}
+.gallery .big{grid-row:span 2}
+.cta{padding:38px;border-radius:25px;text-align:center;background:linear-gradient(120deg,#7c5cff22,#00d9ff12);border:1px solid #ffffff14}
+.cta h2{font-size:35px;margin:0 0 8px}
+.badge-live{display:inline-flex;align-items:center;gap:7px;color:#dffcff;font-size:12px}.dot{width:8px;height:8px;border-radius:50%;background:#2df3a2;box-shadow:0 0 12px #2df3a2}
+@media(max-width:760px){.statbar,.feature-grid{grid-template-columns:1fr}.gallery{grid-template-columns:1fr 1fr;grid-auto-rows:150px}.gallery .big{grid-row:span 2}.hero{min-height:700px}}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap"><nav>
+<a class="brand" href="#">WUKONG <i>GAMING</i></a>
+<div class="links"><a href="#about">عن المكان</a><a href="#services">الخدمات</a><a href="#menu">المنيو</a><a href="#visit">الموقع</a></div>
+</nav></div>
+</header>
+
+<main>
+<section class="hero">
+<div class="hero-bg"></div>
+<div class="wrap"><div class="hero-content">
+<div class="pill">🎮 GAMING & INTERNET CAFE • الجيزة</div>
+<h1>اللعب هنا<br><span>له طعم تاني.</span></h1>
+<p class="lead">Wukong Gaming — مساحة مخصصة لعشاق الـGaming والـEsports وتصفح الإنترنت، في منطقة الهرم بالجيزة.</p>
+
+<div class="statbar">
+  <div class="stat"><b>🎮 Gaming</b><span>أجواء مخصصة للاعبين</span></div>
+  <div class="stat"><b>🏆 Esports</b><span>مناسب للمنافسات</span></div>
+  <div class="stat"><b>🕐 24/7</b><span>بحسب المعلومات المنشورة</span></div>
+</div>
+<div class="actions">
+<a class="btn primary" href="tel:+201508500201">📞 اتصل الآن</a>
+<a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Wukong+Gaming%2C+شارع+الاربعين+الجديد%2C+الهرم%2C+الجيزة" target="_blank" rel="noopener">📍 الاتجاهات</a>
+</div>
+</div></div>
+</section>
+
+<section id="about">
+<div class="wrap">
+<div class="title"><h2>عن Wukong Gaming</h2><p>كل اللي تحتاجه لجلسة Gaming ممتعة</p></div>
+<div class="grid">
+<div class="card"><div class="icon">🖥️</div><h3>Gaming & Esports</h3><p class="muted">المكان مُدرج كـInternet Cafe وموصوف بأنه مخصص للـEsports والـGaming وتصفح الإنترنت.</p></div>
+<div class="card"><div class="icon">⚡</div><h3>تجربة لعب</h3><p class="muted">مساحة مناسبة للعب الفردي والجماعي وقضاء وقت مع أصحابك.</p></div>
+<div class="card"><div class="icon">🕐</div><h3>24 ساعة</h3><p class="muted">المعلومات الحالية المتاحة تشير إلى أن المكان مفتوح 24 ساعة يوميًا.</p></div>
+</div>
+</div>
+</section>
+
+<section id="services">
+<div class="wrap">
+<div class="title"><h2>الخدمات</h2><p>المعلومات المؤكدة المتاحة عن المكان</p></div>
+<div class="grid">
+<div class="card"><div class="icon">🎮</div><h3>Gaming</h3><p class="muted">تجربة ألعاب وترفيه داخل الـGaming Café.</p></div>
+<div class="card"><div class="icon">🌐</div><h3>Internet</h3><p class="muted">تصفح واستخدام الإنترنت داخل المكان.</p></div>
+<div class="card"><div class="icon">🏆</div><h3>Esports</h3><p class="muted">بيئة موجهة لعشاق الـEsports والـGaming.</p></div>
+</div>
+</div>
+</section>
+
+
+<section id="experience">
+<div class="wrap">
+  <div class="title"><h2>تجربة Wukong</h2><p>واجهة مصممة لتوصل أهم المعلومات بسرعة من الموبايل</p></div>
+  <div class="feature-grid">
+    <div class="feature glow-card">
+      <div class="badge-live"><span class="dot"></span> GAMING EXPERIENCE</div>
+      <h3>كل اللي تحتاجه في مكان واحد</h3>
+      <p>صفحة واضحة للأسعار والخدمات والتواصل والموقع، مع تصميم سريع ومناسب لفكرة الـNFC والـQR.</p>
+      <div class="mini">📱 Mobile First • NFC Ready</div>
+    </div>
+    <div class="feature">
+      <div class="icon">📍</div>
+      <h3>وصل للمكان بسرعة</h3>
+      <p>زر مباشر لفتح الموقع على Google Maps بدون البحث اليدوي.</p>
+      <a class="btn primary" href="#visit">اعرف العنوان</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="gallery">
+<div class="wrap">
+  <div class="title"><h2>📸 Gallery</h2><p>صور تجريبية للمعاينة — تُستبدل بصور المكان الأصلية</p></div>
+  <div class="gallery">
+    <div class="big" style="background-image:url('https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1200&q=85')"></div>
+    <div style="background-image:url('https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=900&q=85')"></div>
+    <div style="background-image:url('https://images.unsplash.com/photo-1603481546238-487240415921?auto=format&fit=crop&w=900&q=85')"></div>
+  </div>
+</div>
+</section>
+<section id="menu">
+<div class="wrap">
+<div class="title"><h2>☕ المنيو</h2><p>المنيو والأسعار الرسمية لم تظهر في المصادر العامة التي تم العثور عليها.</p></div>
+<div class="card menu">
+<div class="item"><strong>المنيو</strong><span>سيتم تحديثها</span></div>
+<p class="muted">لم أضع أسعارًا من عندي حتى لا يكون الموقع مضللًا. بمجرد توفر صورة المنيو الأصلية نضيفها هنا كما هي.</p>
+</div>
+</div>
+</section>
+
+<section id="visit">
+<div class="wrap">
+<div class="title"><h2>📍 زورنا</h2><p>البيانات الحالية المتاحة للمكان</p></div>
+<div class="info">
+<div class="card">
+<h3>العنوان</h3>
+<p class="muted">شارع الأربعين الجديد، أسفل كوبري ترسا، الهرم، الجيزة، مصر.</p>
+<a class="btn primary" href="https://www.google.com/maps/search/?api=1&query=Wukong+Gaming%2C+شارع+الاربعين+الجديد%2C+Tersa%2C+Al+Haram%2C+Giza" target="_blank" rel="noopener">افتح Google Maps</a>
+</div>
+<div class="card">
+<h3>التواصل</h3>
+<p class="muted">📞 01508500201</p>
+<a class="btn primary" href="tel:+201508500201">اتصل بالمكان</a>
+<div class="socials">
+<span class="social mutedlink">Facebook — غير متحقق</span>
+<span class="social mutedlink">Instagram — غير متحقق</span>
+</div>
+<p class="note">لم أضع روابط سوشيال عشوائية؛ لم أجد حسابات رسمية مؤكدة بالاسم نفسه.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+
+<section>
+<div class="wrap">
+  <div class="cta">
+    <h2>جاهز للجيم؟ 🎮</h2>
+    <p class="muted">اتصل بالمكان أو افتح الخريطة للوصول بسهولة.</p>
+    <div class="actions" style="margin-top:20px">
+      <a class="btn primary" href="tel:+201508500201">📞 اتصل الآن</a>
+      <a class="btn ghost" href="#visit">📍 الموقع والتواصل</a>
+    </div>
+  </div>
+</div>
+</section>
+<a class="top" href="#">↑</a>
+<footer>© 2026 Wukong Gaming — Demo Website</footer>
+</body>
+</html>
